@@ -17,22 +17,32 @@
         <input type="checkbox" name="main_open" id="main_open" class="main_480" hidden>
         <header>
             <div id="util_area">
-                <a href="#">로그인</a>
-                <a href="#">회원가입</a>
-                <a href="#">문의하기</a>
-                <select name="util_lang" id="util_lang">
-                    <option value="한국어">한국어</option>
-                    <option value="English">English</option>
-                    <option value="中文(简体)">中文(简体)</option>
-                    <option value="日本語">日本語</option>
-                </select>
+                <div id="util_left">
+                    <i class="fas fa-bullhorn color-blue"></i>
+                    <div id="util_slide">
+                        <p>[공지사항] 2020년 지역문화유산 활용 전문인력 교육(야행) 안내</p>
+                        <p>[공지사항] 2020년도 상반기 모범공무원 정부포상 추천후보자 공개검증 안내</p>
+                        <p>[공지사항] 국립문화재연구소 보존과학연구실 공무직 채용 공고</p>
+                    </div>
+                </div>
+                <div id="util_right">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">문의하기</a>
+                    <select name="util_lang" id="util_lang">
+                        <option value="한국어">한국어</option>
+                        <option value="English">English</option>
+                        <option value="中文(简体)">中文(简体)</option>
+                        <option value="日本語">日本語</option>
+                    </select>
+                </div>
             </div>
-            <a href="#" id="logo"></a>
+            <a href="index.html" id="logo"></a>
             <!-- 네비게이션 -->
             <nav class="not_480">
                 <ul>
                     <li class="dep_1">
-                        <a href="#">무형문화재관리원</a>
+                        <a href="index.html">무형문화재관리원</a>
                         <ul class="dep_2">
                             <li><a href="#">소개</a></li>
                             <li>
@@ -49,7 +59,7 @@
                         </ul>
                     </li>
                     <li class="dep_1">
-                        <a href="#">무형문화재 현황</a>
+                        <a href="sub1.html">무형문화재 현황</a>
                         <ul class="dep_2">
                             <li><a href="#">전통 공연·예술</a></li>
                             <li><a href="#">전통기술</a></li>
@@ -67,7 +77,7 @@
                             <li>
                                 <a href="#">공연</a>
                                 <ul class="dep_3">
-                                    <li><a href="#">월간 공연 일정</a></li>
+                                    <li><a href="sub2.html">월간 공연 일정</a></li>
                                     <li><a href="#">년간 공연 일정</a></li>
                                 </ul>
                             </li>
@@ -110,18 +120,21 @@
             </nav>
             <!-- /네비게이션 -->
             <!-- 검색 -->
-            <div id="search_area" class="not_480">
-                <input type="text" id="search">
-                <i class="fas fa-search"></i>
+            <div id="search_area">
+                <div id="search_input">
+                    <span>통합검색</span>
+                    <input type="text" id="search" placeholder="검색어를 입력해주세요">
+                    <i class="fas fa-search"></i>
+                </div>
             </div>
             <!-- / -->
             <!-- 모바일 -->
-            <label for="main_open" class="main_480"><i class="fas fa-bars"></i></label>
+            <label for="main_open" class="main_480" id="main_open_btn"><i class="fas fa-bars"></i></label>
 
             <nav class="main_480">
                 <ul>
                     <li class="dep_1">
-                        <a href="#">무형문화재관리원</a>
+                        <a href="index.html">무형문화재관리원</a>
                         <ul class="dep_2">
                             <li><a href="#">소개</a></li>
                             <li>
@@ -138,7 +151,7 @@
                         </ul>
                     </li>
                     <li class="dep_1">
-                        <a href="#">무형문화재 현황</a>
+                        <a href="sub2.html">무형문화재 현황</a>
                         <ul class="dep_2">
                             <li><a href="#">전통 공연·예술</a></li>
                             <li><a href="#">전통기술</a></li>
@@ -156,7 +169,7 @@
                             <li>
                                 <a href="#">공연</a>
                                 <ul class="dep_3">
-                                    <li><a href="#">월간 공연 일정</a></li>
+                                    <li><a href="sub1.html">월간 공연 일정</a></li>
                                     <li><a href="#">년간 공연 일정</a></li>
                                 </ul>
                             </li>
@@ -202,7 +215,7 @@
         <!-- /헤더 -->
 
         <!-- 비쥬얼 -->
-        <div id="visual">
+        <div id="visual" class="main_page">
             <div class="visual_slide"><img src="resource/image/visual1.jpg" alt="visual" title="visual"></div>
             <div class="visual_slide"><img src="resource/image/visual2.jpg" alt="visual" title="visual"></div>
             <div class="visual_slide"><img src="resource/image/visual3.jpg" alt="visual" title="visual"></div>
@@ -210,20 +223,25 @@
             <div class="visual_text">
                 <div class="visual_text_box">
                     <h2 class="visual_title">무형유산 디지털 체험관 개관 </h2>
-                    <p class="visual_text"><span>놀이한마당(AI,VR 체험)</span><span>아름다운 향연(포토존)</span><span>함께하는 장인 정신(꾸미기)</span><span>다면 영상관(3차원 입체영상)</span></p>
+                    <p class="visual_content"><span>놀이한마당(AI,VR 체험)</span><span>아름다운 향연(포토존)</span><span>함께하는 장인 정신(꾸미기)</span><span>다면 영상관(3차원 입체영상)</span></p>
                 </div>
             </div>
             <div class="visual_text">
                 <div class="visual_text_box">
                     <h2 class="visual_title">씨름, 분단을 넘어 세계를 잇다!</h2>
-                    <p class="visual_text">유네스코 인류무형유산 등재 기념 특별전</p>
+                    <p class="visual_content">유네스코 인류무형유산 등재 기념 특별전</p>
                 </div>
             </div>
             <div class="visual_text">
                 <div class="visual_text_box">
                     <h2 class="visual_title">무형유산 유튜브 영상 공모전</h2>
-                    <p class="visual_text">본선 진출작 발표 | 본선 작품 상영 및 시상식 : 4월 30일(일) 무형문화재관리원</p>
+                    <p class="visual_content">본선 진출작 발표 | 본선 작품 상영 및 시상식 : 4월 30일(일) 무형문화재관리원</p>
                 </div>
+            </div>
+            <div id="visual_slide_box">
+                <div class="visual_slide_btn"></div>
+                <div class="visual_slide_btn"></div>
+                <div class="visual_slide_btn"></div>
             </div>
         </div>
         <!-- /비쥬얼 -->
@@ -231,17 +249,18 @@
         <!-- 콘텐츠 -->
         <div id="content">
             <!-- 새소식 -->
-            <div class="container d-flex justify-content-between flex-wrap align-items-center">
-                <div class="content_wrap">
+            <div class="container">
+                <div class="content_wrap d-flex justify-content-around flex-wrap align-items-center" id="notice">
                     <div class="content_title">
                         <h2>새소식</h2>
                     </div>
+                    
                     <div class="content_box">
-                        <input type="radio" hidden value="notice_1" name="notice" id="notice_1">
+                        <input type="radio" checked hidden value="notice_1" name="notice" id="notice_1">
                         <input type="radio" hidden value="notice_2" name="notice" id="notice_2">
                         <input type="radio" hidden value="notice_3" name="notice" id="notice_3">
                         <input type="radio" hidden value="notice_4" name="notice" id="notice_4">
-                        <div id="notice_header">
+                        <div id="notice_header" class="d-flex justify-content-between align-items-center">
                             <label for="notice_1" class="notice_label">공지사항</label>
                             <label for="notice_2" class="notice_label">보도자료</label>
                             <label for="notice_3" class="notice_label">채용정보</label>
@@ -250,7 +269,7 @@
 
                         <div id="notice_body">
 
-                            <div class="notice_item">
+                            <div class="notice_item" data-target="notice_1">
                                 <table class="table_style">
                                     <thead>
                                         <tr>
@@ -283,7 +302,7 @@
                                 </table>
                             </div>
 
-                            <div class="notice_item">
+                            <div class="notice_item" data-target="notice_2">
                                 <table class="table_style">
                                     <thead>
                                         <tr>
@@ -316,11 +335,11 @@
                                 </table>
                             </div>
                             
-                            <div class="notice_item">
+                            <div class="notice_item" data-target="notice_3">
                                 <div class="noData">진행중인 채용정보가 없습니다.</div>
                             </div>
 
-                            <div class="notice_item">
+                            <div class="notice_item" data-target="notice_4">
                                 <table class="table_style">
                                     <thead>
                                         <tr>
@@ -352,31 +371,45 @@
                                     </tbody>
                                 </table>
                             </div>
-
                         </div>
                         
+                    </div>
+
+                    <div id="notice_side" class="d-flex flex-column justify-content-end mt-4">
+                        <div id="notice_side_top">
+                            <h5>주요서비스</h5>
+                            <div id="notice_side_top_content">
+                                <div class="notice_side_top_items">- 무형문화재관리원</div>
+                                <div class="notice_side_top_items">- 무형문화재 현황</div>
+                                <div class="notice_side_top_items">- 행사안내</div>
+                                <div class="notice_side_top_items">- 전승지원</div>
+                                <div class="notice_side_top_items">- 데이터 공개</div>
+                            </div>
+                        </div>
+                        <div id="notice_slide_bottom" class="d-flex flex-column justify-content-end position-relative overflow-hidden">
+                            <button class="button text-white border-white">무형문화재관리원 <i class="fas fa-arrow-right text-white"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- /새소식 -->
             <!-- 팝업 -->
-            <div class="container">
-                <div class="content_wrap">
+            <div class="content_wrap" id="popup">
+                <div class="container">
                     <div class="content_title">
                         <h2>팝업</h2>
                     </div>
-                    <div class="content_box d-flex justify-content-between flex-wrap align-items-center">
-                        <div class="popup_box"></div>
-                        <div class="popup_box"></div>
-                        <div class="popup_box"></div>
-                        <div class="popup_box"></div>
+                    <div class="content_box d-flex justify-content-around flex-wrap align-items-center">
+                        <div class="popup_box"><img src="resource/image/popup1.png" alt="popup" title="popup"></div>
+                        <div class="popup_box"><img src="resource/image/popup2.png" alt="popup" title="popup"></div>
+                        <div class="popup_box"><img src="resource/image/popup3.png" alt="popup" title="popup"></div>
                     </div>
                 </div>
             </div>
             <!-- /팝업 -->
             <!-- 행사 -->
-            <div class="container">
-                <div class="content_wrap">
+            <div class="content_wrap">
+                <div class="container" id="festival">
                     <div class="content_title">
                         <h2>행사</h2>
                     </div>
@@ -390,7 +423,7 @@
                         </div>
                         <div class="card_items">
                             <h5 class="festival_title">[전시]탈놀이, 신명에 실어 시름을 날리다 특별전</h5>
-                            <div class="festival_icon"><i class="fas fa-university">`</i></div>
+                            <div class="festival_icon"><i class="fas fa-university"></i></div>
                             <p class="m-0">장소: 상설전시실1</p>
                             <p class="m-0">일시: 2021년 5월 27일 ~</p>
                             <button class="read_more">상세내용 보기</button>
@@ -419,7 +452,7 @@
                     <div class="content_title">
                         <h2>유네스코 인류무형유산</h2>
                     </div>
-                    <div class="content_box d-flex justify-content-center">
+                    <div class="content_box d-flex justify-content-center flex-wrap">
                         <div class="unesco_wrap">
                             <h5 class="unesco_title">2001</h5>
                             <div class="unesco_list">
@@ -451,9 +484,9 @@
                         <div class="unesco_wrap">
                             <h5 class="unesco_title">2010</h5>
                             <div class="unesco_list">
-                                <p class="unseco_item">가곡</p>
-                                <p class="unseco_item">대목장</p>
-                                <p class="unseco_item">매사냥</p>
+                                <p class="unesco_item">가곡</p>
+                                <p class="unesco_item">대목장</p>
+                                <p class="unesco_item">매사냥</p>
                             </div>
                         </div>
                         <div class="unesco_wrap">
@@ -473,7 +506,7 @@
                         <div class="unesco_wrap">
                             <h5 class="unesco_title">2013</h5>
                             <div class="unesco_list">
-                                <p class="unseco_item">김장문화</p>
+                                <p class="unesco_item">김장문화</p>
                             </div>
                         </div>
                         <div class="unesco_wrap">
@@ -528,7 +561,7 @@
         </div>
         <!-- /콘텐츠 -->
         <!-- 푸터 -->
-        <footer class="pl-2 pr-2">
+        <footer>
             <div id="footer_top" class="d-flex justify-content-between align-items-center flex-wrap">
                 <a href="#" id="footer_logo"></a>
                 <ul id="footer_nav" class="d-flex justify-content-center align-items-center flex-wrap">
@@ -539,7 +572,7 @@
                     <li><a href="#">사이트오류 신고</a></li>
                 </ul>
             </div>
-            <div id="footer_bottom">
+            <div id="footer_bottom" class="d-flex justify-content-between align-items-center flex-wrap">
                 <p id="copyright">인천시 부평구 무네미로 448번길 77 한국산업인력공단 글로벌숙련기술진흥원 | COPYRIGHTⓒ 2016 HRDKOREA</p>
                 <div id="sns">
                     <i class="fab fa-twitter"></i>
